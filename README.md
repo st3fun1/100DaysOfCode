@@ -1,4 +1,4 @@
 # 100DaysOfCode
 
 # First Day
-Pluralsight Tutorial - Contaninerizing an Angular App with Docker
+3 sept 2018 - Pluralsight Tutorial - 3 POMODOROS - of Flask Microframework Tutorial - 
