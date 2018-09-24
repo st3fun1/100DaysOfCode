@@ -1,0 +1,27 @@
+<body>
+    <div class="main-wrapper">
+
+        <form action="{{ url_for('save')}} " method="POST" class="wrap no-top">
+            <div class="grid-100 row">
+                <div class="grid-30">
+                    <div class="title">
+                        <input type="text" name="name" value="{{ saves['name'] }}">
+                    </div>
+                </div>
+                <div class="grid-70">
+                    <div class="colors">
+                        {% for color in options['colors'] %}
+                                <input type="radio" id="{{color}}" name="colors" value="{{color}}"  {% if saves['colors'] == color %} checked {% endif%}>
+                                <label for="{{color}}">{{color}}</label>
+                        {% endfor %}
+                        <button class="btn">Update</button>
+                    </div>
+                </div>
+                <div id="bear" class="grid-100">
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>

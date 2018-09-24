@@ -1,0 +1,8 @@
+<body>
+    <h1> Flask basics </h1>
+    <form action="{{ url_for('save') }}" method="POST">
+        <label>Name your bear</label>
+        <input type="text" name="name" value="{{ saves['name'] }}" autofocus>
+        <input type="submit" value="Let's build it!">
+    </form>
+</body>
